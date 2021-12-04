@@ -35,32 +35,45 @@ namespace zagadka
             int text1 =Convert.ToInt32(Input.Text);
            
             
-            if (text1 > 10 | text1 < 0)
+            if (text1 > 10 && text1 < 0)
             {
-                Otvet1.Content= "ВВедено неверное число введите другое число";
+                Otvet1.Content= "Введено неверное число, введите другое число";
                 return;
             }
             
-            if (text2-text1>=3 |text2-text1>=3 )
+            if (text2-text1>=3  )
             {
-                Otvet1.Content="холодно";
+                Otvet1.Content=new MediaElement{Source = new Uri (Environment.CurrentDirectory + @"\holodno.gif")};
                 return;
             }
-            if (text2-text1==2 |text2-text1==2 )
+            if (text1-text2>=3 )
             {
-                Otvet1.Content="тепло";
+                Otvet1.Content=new MediaElement{Source = new Uri (Environment.CurrentDirectory + @"\holodno.gif")};
                 return;
             }
-            
-            if (text2-text1==1 |text2-text1==1 )
+            if (text2-text1==2 )
             {
-                Otvet1.Content="горячо";
+                Otvet1.Content=new MediaElement{Source = new Uri (Environment.CurrentDirectory + @"\teplo.gif")};
                 return;
             }
-            
+            if ( text1-text2==2 )
+            {
+                Otvet1.Content=new MediaElement{Source = new Uri (Environment.CurrentDirectory + @"\teplo.gif")};
+                return;
+            }
+            if (text2-text1==1  )
+            {
+                Otvet1.Content=new MediaElement{Source = new Uri (Environment.CurrentDirectory + @"\gor.gif")};
+                return;
+            }
+            if (text1-text2==1 )
+            {
+                Otvet1.Content=new MediaElement{Source = new Uri (Environment.CurrentDirectory + @"\gor.gif")};
+                return;
+            }
             if (text2==text1)
             {
-                Otvet1.Content="угдали";
+                Otvet1.Content=new MediaElement{Source = new Uri (Environment.CurrentDirectory + @"\verno.gif")};
                 
             }
         }

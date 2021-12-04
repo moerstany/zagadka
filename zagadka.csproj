@@ -7,13 +7,32 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="teplo.gif">
+        <DependentUpon>AssemblyInfo.cs</DependentUpon>
+      </None>
+      <None Update="gor.gif">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
       <None Update="holodno.gif">
-        <DependentUpon>MainWindow.xaml</DependentUpon>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="verno.gif">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="ygadai1.gif">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+      <Content Include="..\..\Pictures\gif\teplo.gif">
+        <Link>teplo.gif</Link>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>

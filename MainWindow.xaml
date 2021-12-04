@@ -24,7 +24,7 @@
                 </Grid.ColumnDefinitions>
           <ListBox Grid.Row="0" Grid.Column="1" Background="Lavender"  >
               <StackPanel>
-                      <MediaElement Source="ygadai1.gif" Height="200" Width="500" LoadedBehavior="Play" Stretch="Fill" SpeedRatio="1" IsMuted="True"/>
+                      <MediaElement Source="ygadai1.gif" Height="200" Width="500" LoadedBehavior="Play" Stretch="Fill" SpeedRatio="2" IsMuted="True"/>
               </StackPanel>
           </ListBox>
           
@@ -56,8 +56,11 @@
                   </ToolTip>
               </Button.ToolTip>
           </Button>
-                                                                 
-          <Button x:Name="Otvet1" Grid.Row="3" Grid.Column="1" FontSize="20" Foreground="BlueViolet" Background="Lavender" >  </Button>
+           
+          <Button x:Name="Otvet1" Grid.Row="3" Grid.Column="1" Background="Lavender"  >
+             
+          </Button>   
+          
       </Grid>
  </Window>   
 
